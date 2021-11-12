@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="10dp"
+    android:weightSum="2"
+    android:orientation="horizontal">
+
+
+
+    <LinearLayout
+        android:padding="10dp"
+        android:weightSum="10"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1">
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_weight="4"
+            android:layout_height="128dp"
+            android:scaleType="centerCrop"
+            android:id="@+id/iv_ViewOrderCakeProfilePic">
+        </ImageView>
+
+        <LinearLayout
+            android:paddingLeft="10dp"
+            android:layout_weight="4"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:textSize="18dp"
+                android:id="@+id/tv_rCakeName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="Name"
+                android:textStyle="bold"></TextView>
+            <TextView
+                android:id="@+id/tv_rDescription"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="Description"
+                android:textSize="14sp"></TextView>
+
+        </LinearLayout>
+
+        <TextView
+            android:background="@drawable/capsule"
+            android:id="@+id/tv_rPrice"
+            android:layout_width="0dp"
+            android:layout_weight="2"
+            android:layout_height="30dp"
+            android:gravity="center"
+            android:textColor="@color/colorPrimaryDark"
+            android:hint="Price"
+            android:textSize="20sp"
+            android:textStyle="bold"></TextView>
+
+    </LinearLayout>
+
+
+
+
+</LinearLayout>
